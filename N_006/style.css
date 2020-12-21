@@ -116,3 +116,40 @@ img{
     height: 100px;
     border-radius: 50%;
 }
+
+/* ----------------------
+    PERSONAL DATA
+            &
+        BUTTONS 
+------------------------*/
+
+.personal-data{
+    text-align: center;
+}
+
+.buttons{
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+}
+
+.btn-follow,
+.btn-message{
+    width: 130px;
+    height: 40px;
+    border: 1px solid #03045E;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: #03045E;
+}
+
+.btn-message{
+    margin-top: 15px;
+}
+
+button:hover{
+    color: aliceblue;
+    background: #03045E;
+    cursor: pointer;
+}
+
