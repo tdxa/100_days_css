@@ -153,3 +153,22 @@ button:hover{
     cursor: pointer;
 }
 
+/* ----------------------
+    RIGHT SECTION
+------------------------*/
+
+.right section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #97d2f1;
+    color: #03045E;
+}
+.right section:nth-child(2){
+	margin: 3px 0;
+}
+section:hover{
+    cursor: pointer;
+    background: #68c2f3;
+}
