@@ -1,0 +1,260 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+    background: rgb(235, 170, 50);
+    color: #fff;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    perspective: 350px;
+}
+
+.umbrella{
+    position: absolute;
+    left: 13%;
+    top: 8%;
+    transform-style: preserve-3d;
+    transform: rotateX(70deg) rotateY(-15deg);
+}
+
+/* 
+-------------------------    
+UMBRELLA POLE
+-------------------------
+*/
+
+.umbrella .pole{
+    position: absolute;
+    z-index: 2;
+    width: 5px;
+    height: 150px;
+    top: 100px;
+    left: 97px;
+    background: brown;
+    transform-origin: 50% 0%;
+    transform: translateZ(-1px) rotateX(-90deg);
+}
+
+.umbrella .shadow-pole{
+    position: absolute;
+    z-index: -1;
+    width: 4px;
+    height: 70px;
+    top: 100px;
+    left: 97px;
+    background: #84733b;
+    transform-origin: 50% 0%;
+    transform: translateZ(-150px) rotateX(-90deg) rotateZ(260deg);
+    box-shadow: 0 0 2px 1px #84733b;
+}
+
+
+/* 
+-------------------------    
+UMBRELLA TOP
+-------------------------
+*/
+
+.umbrella .umbrella-top{
+    position: relative;
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotateUmbrella 5s linear infinite;
+}
+
+.umbrella .umbrella-top .triangle{
+    position: absolute;
+    top: 100px;
+    left: 77px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 24px 98px 24px;
+    border-color: transparent transparent #fff transparent;
+    transform-origin: 50% 0;
+}
+
+.umbrella .umbrella-top .triangle-1{
+    transform: rotateZ(0deg) rotateX(-20deg);
+    border-color: transparent transparent #D70606 transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-2{
+    transform: rotateZ(30deg) rotateX(-20deg);
+    border-color: transparent transparent #fff transparent;
+
+}
+.umbrella .umbrella-top .triangle-3{
+    transform: rotateZ(60deg) rotateX(-20deg);
+    border-color: transparent transparent #D70606 transparent;
+
+}
+.umbrella .umbrella-top .triangle-4{
+    transform: rotateZ(90deg) rotateX(-20deg);
+    border-color: transparent transparent #fff transparent;
+
+}
+.umbrella .umbrella-top .triangle-5{
+    transform: rotateZ(120deg) rotateX(-20deg);
+    border-color: transparent transparent #D70606 transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-6{
+    transform: rotateZ(150deg) rotateX(-20deg);
+    border-color: transparent transparent #fff transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-7{
+    transform: rotateZ(180deg) rotateX(-20deg);
+    border-color: transparent transparent #D70606 transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-8{
+    transform: rotateZ(210deg) rotateX(-20deg);
+    border-color: transparent transparent #fff transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-9{
+    transform: rotateZ(240deg) rotateX(-20deg);
+    border-color: transparent transparent #D70606 transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-10{
+    transform: rotateZ(270deg) rotateX(-20deg);
+    border-color: transparent transparent #fff transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-11{
+    transform: rotateZ(300deg) rotateX(-20deg);
+    border-color: transparent transparent #D70606 transparent;
+
+}
+
+.umbrella .umbrella-top .triangle-12{
+    transform: rotateZ(330deg) rotateX(-20deg);
+    border-color: transparent transparent #fff transparent;
+
+}
+
+@keyframes rotateUmbrella{
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/* 
+-------------------------    
+SHADOW UMBRELA TOP
+-------------------------
+*/
+
+.umbrella .shadow-umbrella-top{
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: translateZ(-150px) translateX(120px) translateY(-40px) scale(0.9);
+    animation: rotateShadow 5s linear infinite;
+}
+
+.umbrella .shadow-umbrella-top .triangle{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 21px 70px 21px;
+    border-color: transparent transparent #84733b transparent;
+    transform-origin: 50% 0;
+    box-shadow: 0 0 4px 2px #84733b;
+}
+
+
+.umbrella .shadow-umbrella-top .triangle-1{
+    transform: rotateZ(0deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-2{
+    transform: rotateZ(30deg) rotateX(-20deg) translateY(-1px);
+}
+    
+.umbrella .shadow-umbrella-top .triangle-3{
+    transform: rotateZ(60deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-4{
+    transform: rotateZ(90deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-5{
+    transform: rotateZ(120deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-6{
+    transform: rotateZ(150deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-7{
+    transform: rotateZ(180deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-8{
+    transform: rotateZ(210deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-9{
+    transform: rotateZ(240deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-10{
+    transform: rotateZ(270deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-11{
+    transform: rotateZ(300deg) rotateX(-20deg) translateY(-1px);
+}
+
+.umbrella .shadow-umbrella-top .triangle-12{
+    transform: rotateZ(330deg) rotateX(-20deg) translateY(-1px);
+}
+
+
+
+@keyframes rotateShadow{
+    from {
+        transform: translateZ(-150px) translateX(120px) translateY(-40px) scale(0.9) rotateZ(0deg);
+    }to {
+        transform: translateZ(-150px) translateX(120px) translateY(-40px) scale(0.9) rotateZ(360deg);
+    }
+}
