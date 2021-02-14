@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dots slider</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="frame">
+        <div class="container" id="container">
+                <input type="checkbox" name="check" id="check"/>
+                <label for="check"></label>
+                <div class="circle"></div>
+        </div>
+    </div>
+    </div>
+    <script>
+        for (let i = 0; i < 10; i++) {
+            const line = document.createElement('div');
+            line.className = 'line';
+            line.setAttribute("id", `line_${i + 1}`);
+            document.getElementById('container').appendChild(line);
+        }
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

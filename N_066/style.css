@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+    background:  rgb(42, 80, 157);
+    color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+	height: 50px;
+	width: 50px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+#check{
+    visibility: hidden;
+
+}
+
+.circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.line{
+    /* height: 20px;
+    width: 5%;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute; */
+    z-index: -1;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	height: 30px;
+	width: 3px;
+	border-radius: 5px;
+	opacity: 0;
+}
+
+#line_1 {
+    animation: line_anim_1 0.4s ease-in-out 0s 1 normal;
+}
+
+#line_3{
+
+}
+
+#line_4{
+
+}
+
+#line_5{
+
+}
+
+#line_6{
+
+}
+
+#line_7{
+
+}
+
+#line_8{
+
+}
+
+#line_9{
+
+}
+
+#line_10{
+
+}
+
+
+@keyframes line_anim_1{
+0% {
+    opacity: 0%;
+    transform: translateY(-40px);
+    }
+50% {
+    opacity: 100%;
+    }
+100% {
+    opacity: 0%;
+    transform: translateY(-50px);
+    }
+}
