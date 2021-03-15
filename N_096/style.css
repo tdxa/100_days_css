@@ -1,0 +1,106 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: rgb(38, 134, 194);
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.jump{
+    animation: jump 1.5s ease-in-out infinite both;
+}
+
+.squezze{
+    transform-origin: 50% 100%;
+    animation: squezze 1.5s cubic-bezier(0.75,0.05, 0.3, 0.97) infinite;
+}
+
+.rotate{
+    animation: rotate 1.5s ease-in-out infinite;
+}
+
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+.shadow {
+	position: absolute;
+	z-index: -1;
+	bottom: -2px;
+	left: -5px;
+	right: -5px;
+	height: 2px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 2px 8px rgba(0, 0, 0, 0.2);
+	animation: shadow 1.5s ease-in-out infinite;
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(-100px);
+    }
+    30%,50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes squezze{
+    0%, 5%{
+        transform: scale(1);
+    }
+    45%{
+        transform: scale(1.8,0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes rotate {
+	0% {
+		transform: rotate(-170deg);
+	}
+	20%,
+	90% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(170deg);
+	}
+}
+
+@keyframes shadow {
+	0%,
+	100% {
+		transform: scaleX(0.5);
+	}
+	45%,
+	50% {
+		transform: scaleX(1.8);
+	}
+}

@@ -10,4 +10,5 @@ Repositorium for playing with [100 Days of CSS Challenge](https://100dayscss.com
 | 🟢 [66 - Radio button animation](https://github.com/tdxa/100_days_css/tree/master/N_066)| ⏳ |
 | ⛱  [67 - Umbrella](https://github.com/tdxa/100_days_css/tree/master/N_067)| ✔ |
 | 📆 [70 - Calendar](https://github.com/tdxa/100_days_css/tree/master/N_070)| ✔ |
-### Total:  4 / 100
+| ⬜ [96 - Square](https://github.com/tdxa/100_days_css/tree/master/N_096)| ✔ |
+### Total:  5 / 100
